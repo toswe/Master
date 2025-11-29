@@ -1,0 +1,25 @@
+Student,Question,Score,Answer
+Student 1,1,10,"Oznacene cele brojeve mozemo zapisati u binarnom sistemu kao:
+znak i apsolutnu vrednost, popuni komplement, nepotpotpuni komplement, kao i visak k"
+Student 1,2,5,"Mane zapisa znaka i apsolutne vrdnosti su sto 0 oznacava (+) , a N-1 znak (-). Nastaje problem kada imamo zapis sa vise cifara i iza 0 imamo jos nula, 
+sto ne sme da menja znacenje znaka (+) tj. 0."
+Student 1,3,8,"Zapis realnih brojeva u fiksnom zarezu : Ne mozemo pomerati tacku koja odredjuje decimalni zarez, njeno mesto je odredjeno formatom npr. 7.3 su 
+4 mesta za ceo broj i 3 mesta iza decimalnog zareza.
+Zapis realnih brojeva u pokretnom zarezu : Decimalni zarez se moze pomerati - npr (101.54)10 je u normalizovanom zapisu 1.0154 x 10^2 tj. (1.0154, 2)10"
+Student 1,4,4,"Opseg i preciznost zapis realnih brojeva  u pokretnom zarezu pdredjuje format u kom se zapisuje. Npr 10^2 - pozitivan eksponent oznacava pomeranje
+pokretnog zareza za dva mesta u levo, dok npr. 10^-2 - negativan eksponent oznacava pomeranje pokretnog zareza za dva mesta u desno. Gore pomenut primer iz
+prethodnog zadataka - (101.54)10  bi u zapisu 10^-2 izgledao ovako : (10154, -2)10 tj. 10154 x 10^-2"
+Student 1,5,8,"Tekst u racunaru se zapisuje tako sto se svakom slovu tj. karakteru se zadaje odredjeni broj koji se binarno zapisuje u racunaru.
+ASCII (American Standardized Code for Information Interchange) i Unicode (+UTF 8) se koriste za zapis teksta i druhih karaktera u racunaru."
+Student 1,6,3,"Dva glavna koraka u digitalizaciji zvuka su ADC i DAC.
+ADC (Analog to Digital Converter) je proces kada se mikrofonom analogni zvuk snimi, zatim se konvertuje u digitalni zvuk.
+DAC (Digital to Analog Converter) je proces kada se digitalizovan zvuk konvertuje u analogni kako bi se reprodukovao kao analogni u zvucniku."
+Student 1,7,9,"Prednosti rasterskog prikaza su detalji slike koji se mogu postici u ovom formatu, obzirom da je slika sacinjena iz piksela (px).
+Mane rasterskog prikaza su to sto se znacajno gubi na kvalitetu slike ukoliko se vrse transformacije slike (povecenje slike, scale).
+Vektorske slike sacinjene su od geometrijskih oblika i ne sadrze piksele. Samim tim njihova mana je sto ne mogu imati ni pribliznu
+kolicinu detalja na slikama poput rasterskih. Prednost je sto nece gubiti na kvalitetu slike ukoliko dodje do promene velicine."
+Student 1,8,2,"JPEG je standardan zapis slika u racunaru, dok se GIF odnosi na kratak 'slide show' slika koje se smenjuju i tako pravi kratak video koji 
+ne sadrzi zvuk."
+Student 1,9,4,"Histogram je nacin vizuelnog prikazivanja podataka. x se odnosi na vertikalnu osu tj. visinu histograma, dok y se odnosi na horizontalnu osu."
+Student 1,10,3,"Hard disk sluzi za skladistenje podataka na racunaru. Kes memorija skladisti podatke koji su uneti u racunar - npr zapamcene su 
+informacije koje su unete na web pretrazivacu poput korisnickog imena i lozinke i slican tip informacija. Mogu se brisati po potrebi."
