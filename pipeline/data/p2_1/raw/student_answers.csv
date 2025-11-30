@@ -1,0 +1,352 @@
+Student,Question,Score,Answer
+Student 1,1,7,(x & 255)
+Student 2,1,3,(x&(~0xFF))
+Student 3,1,0,"unsigned base = 255<< (sizeof(unsigned)*8-1);
+boolean x = false;
+unsigned rezultat = 0;
+if(x&mask == rezultat) x = true;"
+Student 4,1,0,if(x&&f000==0000) return 1;
+Student 5,1,2,"x&~(1<<i) -> na i-tom mestu je nula
+(x&1)&(x&~(1<<i))"
+Student 6,1,10,(x&((1<<8)-1)==0
+Student 7,1,5,!(x&511)
+Student 8,1,0,
+Student 9,1,0,x&0=0 x|1=1
+Student 10,1,0,if((x<<24)|0)
+Student 11,1,3,x=x&(~0>>8)
+Student 12,1,2,x&(15 << 7*sizeof(unsigned))
+Student 13,1,10,((x&255)==0)
+Student 14,1,2,~((x>>(sizeof(unsigned)-8))&~0)
+Student 15,1,10,x==x&((~0)>>8)?1:0;
+Student 16,1,0,0==(x^x)
+Student 17,1,7,x&~(~0<<8)
+Student 1,2,10,O(n²)
+Student 2,2,5,"O(n² log n), O(n³)"
+Student 3,2,7,"O(n²), O(n³)"
+Student 4,2,5,"O(n² log n), O(n³)"
+Student 5,2,5,"O(n² log n), O(n³)"
+Student 6,2,10,"O(n²), O(n² log n), O(n³)"
+Student 7,2,5,"O(n² log n), O(n³)"
+Student 8,2,10,"O(n²), O(n² log n), O(n³)"
+Student 9,2,0,O(n log n)O(n² log n)
+Student 10,2,10,"O(n²), O(n² log n), O(n³)"
+Student 11,2,5,"O(n² log n), O(n³)"
+Student 12,2,7,"O(n²), O(n² log n)"
+Student 13,2,10,"O(n²), O(n² log n), O(n³)"
+Student 14,2,10,"O(n²), O(n² log n), O(n³)"
+Student 15,2,10,"O(n²), O(n² log n), O(n³)"
+Student 16,2,5,"O(n² log n), O(n³)"
+Student 17,2,10,O(n²)
+Student 1,3,5,"Vremenska O(n), Prostorna O(1)"
+Student 2,3,5,"Vremenska O(n), Prostorna O(n²)"
+Student 3,3,5,"Vremenska O(1), Prostorna O(n)"
+Student 4,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 5,3,5,"Vremenska O(n), Prostorna O(1)"
+Student 6,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 7,3,10,"Vremenska O(n+1), Prostorna O(n+1)"
+Student 8,3,5,"Vremenska O(2^n), Prostorna O(n)"
+Student 9,3,5,"Vremenska O(2^n), Prostorna O(n)"
+Student 10,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 11,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 12,3,5,"Vremenska O(1), Prostorna O(n)"
+Student 13,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 14,3,5,"Vremenska O(2^n), Prostorna O(n)"
+Student 15,3,5,Vremenska O(n)
+Student 16,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 17,3,10,"Vremenska O(n), Prostorna O(n)"
+Student 1,4,10,"Indeksiranje elemenata, brži pristup, 
+manja memorijska složenost jer nema pokazivača."
+Student 2,4,8,"Lakse je kretati se kroz niz, odnosno, pristupiti nekom elemntu i nad njim izvrsiti bilo kakvu radnju. Teze je umetati i izbacivati elemente na pocetak i u sredinu niza."
+Student 3,4,8,"Prednosti niza su jednostavan ristup elementu niza (O(1)), a za listu je O(n), jer svaki element ima tacno odredjenu adresu. Takodje jednostavno je brisanje elementa. Mana je dodavanje elementa O(n)"
+Student 4,4,8,"Lake je pristupati odredjenom elementu u nizu, nego elementu u listi"
+Student 5,4,8,"Prednost koriscenja niza je ta sto direktno mozemo pristupiti bilo kom elementu, dok kada je lista u pitanju moramo da prodjemo kroz sve elemente da bi uzeli trazeni element"
+Student 6,4,8,Niz omogucava pristup proizvoljnom elementu u O(1);
+Student 7,4,8,"Proizvoljan pristup, elementi su grupisani svi zajedno i moze da se vrati unazad pri pretrazi ii obradi elemenata niza"
+Student 8,4,8,"Laksa je pretraga elemenata, sortiranje, sam pristup elementima"
+Student 9,4,8,Pristup k-tom elementu zato sto se koriscenjem niza koristi indeksni pristup
+Student 10,4,8,Lakse se pristupa elementima niza (manja vremenska slozenost) i intuitivniji su nizovi za rad od listi
+Student 11,4,8,Kod jednostruko povezanih listi teze je menjati sredisnji element nego sto je to slucaj sa nizovima.
+Student 12,4,4,"Niz je laksi za sortiranje,jer imamo uzastopne elemente, niz cemo koristiti kada ne treba puno menjati podatke, kada unapred znamo duzinu niza."
+Student 13,4,8,"U nizu mozemo u O(1) pristupiti svakom elementu, dok za povezanu listu moramo proci kroz sve elemente pre onog kom pristupamo, da bismo do njega dosli"
+Student 14,4,9,"Lakse pristupamo elementima niza nego liste, tj manja je slozenost"
+Student 15,4,5,"Glavna prednost je pretraga koja moze biti binarna, dok je kod listi ogranicena na linearnu"
+Student 16,4,10,"Zamena mesta elementima niza treba uraditi samo za operaciju dodele, brzi pristup elementima, manje memorije zauzima"
+Student 17,4,8,Nizom je mnogo lakse manipulisati i superioran je ako imamo unapred zadat broj elemenata. Pristup srednjem clanu u bilo kom trenutku takodje olaksava rad.
+Student 1,5,10,O(k) Moze bolje balansiranim pretrazivackim binarnim stablom O(logk)
+Student 2,5,5,"Vremenska slozenost je n, moze se postici bolja slozenost ako pomocu binarniog stabla log n"
+Student 3,5,5,Vremenska slozenost pretrage je O(k). Najbolji slucaj ako se koristi niz bi bio merge sort O(klogk) => Niz nije bolja opcija => Nema bolje opcije.
+Student 4,5,3,O(kn). Moze nizovima.
+Student 5,5,0,"Vremenska slozenost je O(k). kako k pripada [-n,n] => |k|=2n => O(n)"
+Student 6,5,10,"O(k). Ubacivanjem elemenata u niz, nakon inicijalnog sortiranja u O(klogk) ili O(n+k) moze se vrsiti binarna pretraga."
+Student 7,5,4,O(k) = O(1) jer je k ograniceno. Moze binarnim pretrazivackim stablima)
+Student 8,5,0,Slozenost je O(n^2). Bolja slozenost bi bila nizom O(n).
+Student 9,5,4,"Vremenska slozenost je O(k). Bolje moze koriscenjem nizova, jer niz moze da pristup indeksu tog elementa."
+Student 10,5,4,"Vremenska slozenost je O(k). Moze se postici bolja slozenost koriscenjem dvostruko povezane liste, kruzne liste, dvostruko povezane kruzne liste."
+Student 11,5,7,Vremenska slozenost je linearna. Bolja slozenost se moze postici binarnim stablima.
+Student 12,5,10,Vremenska slozenost je O(k). Moze bolje nizovima (binarna pretraga) i binarnim pretrazivackim stablima.
+Student 13,5,10,O(k). Moze bolje binarnim pretrazivackim stablima.
+Student 14,5,10,O(k). Moze uredjenim binarnim stablima.
+Student 15,5,5,O(k)
+Student 16,5,7,"Linearna tj O(n). Ako imamo sortiran niz i koristimo binarnu pretragu, imamo slozenost O(nlogn)"
+Student 17,5,10,O(k). Moze se poboljsati uredjenim binarnim stablom
+Student 1,6,2,"void f(unsigned int x, unsigned int y) {
+ if(x==0 || y<x) return;
+   int a = x/3; int b=y/x; 
+    if(a>=b){
+    for(i=x+r; i< = y; i++)
+    g(i);}
+else 
+ for(i=x+r, j=0; j<a; i+=x, j++)
+    g(i);}
+   }
+}"
+Student 2,6,0,--
+Student 3,6,8,"void f(unsigned int x, unsigned int y) {
+    while (x >= 3 && y >= x) {
+        g(y);
+        x = x-3;
+        y = y-x;
+    }
+}"
+Student 4,6,8,"void f(unsigned int x, unsigned int y) {
+    while (x >= 3 && y >= x) {
+        g(y);
+        x = x-3;
+        y = y-x;
+    }
+}"
+Student 5,6,0,"void f(unsigned int x, unsigned int y) {
+    if (x >=3 && y >= x) {
+        x = x-3;
+        y = y-x;
+    } else return
+}"
+Student 6,6,8,"void f(unsigned int x, unsigned int y) {
+    while (x >= 3 && y >= x) {
+        g(y);
+        x = x-3;
+        y = y-x;
+    } return;
+}"
+Student 7,6,6,"""void f(unsigned int x, unsigned int y) {
+    while (!(x<3 || y<x)) {
+        y-=x;
+        x-=3
+    } return;
+}"""
+Student 8,6,0,--
+Student 9,6,7,"void f(unsigned int x, unsigned int y) {
+    while (x >=3 && y > x) {
+        g(y);
+        x = x-3;
+        y = y-x;
+    } return;
+}"
+Student 10,6,10,"void f(unsigned int x, unsigned int y) {
+    while (x >= 3 && y >= x) {
+        g(y);
+        unsigned int tmp = x;
+        x = x - 3;
+        y = j-tmp;
+    }
+}"
+Student 11,6,7,"void f(unsigned int x, unsigned int y) {
+      while (x >= 3 && y >= x) {
+      g(y);
+      x-=3;
+        y-=x;
+        
+    } return;
+}"
+Student 12,6,3,"void f(unsigned int x, unsigned int y) {
+      while (x< 3 && y < x) {
+      g(y);
+      x=x-3;
+        y=y-3;
+        
+    } return;
+}"
+Student 13,6,3,"void f(unsigned int x, unsigned int y) {
+      while (x< 3 && y < x) {
+      g(y);
+    
+        y-=x;  x-=3;
+        
+    } return;
+}"
+Student 14,6,7,"void f(unsigned int x, unsigned int y) {
+      while (x >= 3 && y >= x) {
+      g(y);
+      x-=3;
+        y-=x;
+        
+    } return;
+}"
+Student 15,6,6,"void f(unsigned int x, unsigned int y) {
+    while (!(x<3 || y<x)) {
+        y-=x;
+        x-=3
+    } return;
+}"
+Student 16,6,4,"void f(unsigned int x, unsigned int y) {
+    while (x>=3) {
+      if(y<x) return;
+        y-=x;
+        x-=3
+    } return;
+}"
+Student 17,6,7,"void f(unsigned int x, unsigned int y) {
+      while (x >= 3 && y >= x) {
+      g(y);
+      x-=3;
+        y-=x;
+        
+    } return;
+}"
+Student 1,7,10,Rekurzivna
+Student 2,7,0,--
+Student 3,7,10,Rekurzivna
+Student 4,7,10,Rekurzivna
+Student 5,7,0,"Svaka funkcija ima svoj stek okvir i za nju je potrebno da znamo argumente funkcije, lokalne promenljive, adresu stek okvira, adresu povratne funkcije"
+Student 6,7,10,Rekurzivna
+Student 7,7,10,Rekurzivna
+Student 8,7,0,--
+Student 9,7,10,Rekurzivna
+Student 10,7,10,Rekurzivna
+Student 11,7,10,Rekurzivna
+Student 12,7,10,Rekurzivna
+Student 13,7,10,Rekurzivna
+Student 14,7,10,Rekurzivna
+Student 15,7,10,Rekurzivna
+Student 16,7,0,Mora biti statickog tipa
+Student 17,7,10,Rekurzivna
+Student 1,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 2,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 3,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 4,8,0,
+Student 5,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 6,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 7,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 8,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 9,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 10,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 11,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 12,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 13,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 14,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 15,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 16,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 17,8,10,"        10
+       /   \
+      6     15
+     / \   /  \
+    4   8 12  18
+KDL: 10 – 15 – 18 – 12 – 6 – 8 – 4
+LKD: 4 – 6 – 8 – 10 – 12 – 15 – 18"
+Student 1,9,10,neophodno je
+Student 2,9,10,neophodno je
+Student 3,9,10,neophodno je
+Student 4,9,10,neophodno je
+Student 5,9,10,neophodno je
+Student 6,9,10,neophodno je
+Student 7,9,10,neophodno je
+Student 8,9,10,neophodno je
+Student 9,9,10,neophodno je
+Student 10,9,10,neophodno je
+Student 11,9,10,neophodno je
+Student 12,9,10,neophodno je
+Student 13,9,10,neophodno je
+Student 14,9,10,neophodno je
+Student 15,9,10,neophodno je
+Student 16,9,10,neophodno je
+Student 17,9,10,neophodno je
