@@ -1,0 +1,378 @@
+Student,Question,Answer,Score
+1,1,((x>>i)^1)==((x>>j)^1),10
+1,2,"b, c, d su tacni",10
+1,3,I vremenska i prostorna slozenost su logn,10
+1,4,"prisutup ntom elementu je efikasniji za niz nego za povezanu listu
+jednako je efikasno pristupiti ntom elementu niza i dinamickog niza jer se oba nalaze koriscenjem indeksa niza, a u listi moramo proci n cvorova liste da bi dosli do trazenog",10
+1,5,O(n),10
+1,6,7 tackica,10
+1,7,,0
+1,8,"svako pozivanje funkcije zahteva novi prostor na steku, pa je memorisjki zahtevna
+isti potproblemi resavace se po vise puta, pa je vremenski zahtevna",10
+1,9,"void g(int x){
+	while(!g(x)){
+	   	b(x);
+	   	x=p(x);
+	}
+	a(x);
+}",8
+1,10,"bez umanjena opstosti recimo da hocemo da ga sortiramo u rastuci niz
+selection sort radi po principu prolaska kroz ""ostatak"" niza i bira najmanji element
+zatim ga razmenjuje sa prvim nizom ""ostatka"" sto ga cini poslednjim nizom sortiranog dela. Dakle najgori slucaj bio bi kada ulazni niz bio sortiran po suprotnom poretku tj opadajuci.",10
+1,11,"Fragmentacija memorije se desava prilikom dinamicke alokacije. Posto se alocirana memorija dodeljuje nasumicno moze se desiti da iako postoji dovoljno memorije da se smesti novi blok, taj prostor nije uzastopan. Tada se ta memorija ne moze dinamicki alocirati na takav zahtev izvrsnog programa. 
+recimo da je cifrom 0 oznacavamo da je neki bajt memorije slobodan, a 1 da nije
+ako imamo slucaj 0101010101010101 i treba nam 3bajta memorije ne mozemo je dobiti iako imamo 8 slobodnih bajtova jer su rastrkani
+ako imamo slucaj 0000000011111111 tada je moguce alocirati i do 8 bajtova jer su uzastopni",10
+1,12,"najmanja dubina bice za 8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15
+najveca dubina bice za 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+
+
+
+               8 
+         4           12
+      2    6     10      14
+     1 3  5 7   9 11   13  15",10
+2,1,"j i
+101
+int x;
+int i;
+int j;
+scanf(""%d%d%d"",&x,&i,&j)
+void tacan(int x, int i, int j){
+	if(i == j){
+		return x;
+	}
+
+}
+
+   i                j
+0001 0000 0000 0000 1000 0000 0000 0000
+|
+        
+0000 0001 0000 0000 0000 0000 0000 0000",0
+2,2,b) i c),10
+2,3,"vremenka slozenost je konstantna
+	prostorna slozenost je linearna O(logn);",3
+2,4,"pristup n-tom elementu je efikasniji za niz, zato sto imamo odma pristup preko pokazivaca dok kod povezane liste moramo proci kroz celu listu.
+	pristup n-tom elemntu je jednako efikasan i za niz i za dinamicki niz",10
+2,5,O(1);,0
+2,6,,0
+2,7,"char* cmp(char *a, char *b){
+	int n1 = strlen(a);
+	int n2 = strlen(b);
+	if(strcmp(a[n1],b[n2]) <= 0)
+		return a;
+	else
+		return b;
+	
+
+qsort(char *a,int n, cmp);{
+
+
+}",2
+2,8,Mane kod rekurzije su sto je nekad slozenije napisati funkciju rekurzivno nego iterativno,0
+2,9,,0
+2,10,"void f(int x){​
+	if (g(x))​
+	a(x);​
+	else {​
+	b(x);​
+	if(g(p(x)))
+	a(p(x));​
+	}​else
+	b(p(x));
+}",0
+2,11,,0
+2,12,,0
+3,1,,0
+3,2,"c, d",5
+3,3,"vremenska O(3^n), prostorna O(n)",0
+3,4,"Pristup n-tom elementu je efikasniji za povezanu listu ukoliko znamo adresu glave liste, jer je u tom slucaju manja slozenost funkcije.  
+Ukoliko poredimo staticki i dinamicki niz, efikasnije je pristupiti elementu koriscenjem statickog niza jer je slozenost u tom slucaju O(n).",0
+3,5,O(logn),10
+3,6,Poziv f(3) ispisuje 7 tackica,10
+3,7,"int poredi_niske(const void *a, const void *b){
+    char *niz1 = (char *)a;
+    char *niz2 = (char *)b;
+    
+    int duzina1 = strlen(niz1);
+    int duzina2 = strlen(niz2);
+    
+    if(niz1[duzina1 - 1] > niz2[duzina2 - 1])
+         return 1;
+         
+    return 0;     
+}",6
+3,8,"Jedna od mana rekurzije jeste visestruko izracunavanje, gdje se najcesce ponavlja izracunavanje za male ulazne vrijednosti. Ovaj problem moze se rijesiti na dva nacina. Prvi od njih je tehnika memoizacije koja podrazumjeva cuvanje jednom izracunatih vrijednosti. Drugi nacin je dinamicko programiranje, pri cemu se vrsi izracunavanje samo za one vrijednosti za koje se funkcija rekurzivno poziva. Druga mana rekurzije je to sto zahtjeva puno memorije, jer se prilikom svakog poziva funkcije stvara novi stek okvir, sto moze dovesti do prekoracenja steka i prekida rada programa.",9
+3,9,"void f(int x){
+    if(g(x))
+      a(x);
+    else{
+       b(x);
+       while(x == p(x)){
+          if(g(x)){
+            a(x);
+          }else{
+            b(x);
+          }
+       }
+    }
+}",2
+3,10,Algoritam soritranja selection sort je u najgorem slucaju slozenosti O(n^2),0
+3,11,"Pod ,,fragmentisanjem memorije'' smatramo da je memorija ,,iscjepkana'',preciznije, da slobodni bajtovi nisu uzastopno poredjani u memoriji. Na primjer, neka je 0 oznaka za slobodan bajt u memoriji, a 1 oznaka za popunjen bajt u memoriji. Ukoliko memorija izgleda 10010011110001 mi necemo moci da alociramo 4 bajta, jer nemamo 4 uzastopna bajta slobodna u memoriji. Sa druge strane, ako je memorija oblika 1111111110000000, tada imamo 4 uzastopna slobodna bajta i mozemo alocirati memoriju za 4 bajta.",10
+3,12,,0
+4,1,"unsigned x;
+   unsigned i, j;
+   if((x & (1 >> i ) == (x & (1>>j)) {
+   	return 0;
+   }
+   else 
+   {
+   	return 1;
+   }",0
+4,2,b,4
+4,3,T(n),0
+4,4,"Pristup n-tom elementu je u prvom slucaju efikasnije za povezanu listu, a u drugom slucaju je efikasnije za niz.",0
+4,5,O(n log n),0
+4,6,0,0
+4,7,"int poredi(const void *a, const void *b)
+{
+	const void *pa = *(const char*)a;
+	const void *pb = *(const char*)b;
+	int n;
+	
+	
+	
+}",0
+4,8,Mane rekurzije su: mogucnost stack overflow-a i prevelika prostorna slozenost.,5
+4,9,"void f(int x) {
+	
+}",0
+4,10,Najgori slucaj za selection sort je slozenost O(n^2).,0
+4,11,,0
+4,12,a),0
+5,1,"maska=1
+	i=0
+	
+	for(i;i<sizeof(x);i++){
+		for(j=0;j<sizeof(x);j++){
+			if(x&maska<<i && x&maska<<j)
+				return 1;
+			else
+				return 0;",0
+5,2,b i d,5
+5,3,vremenska O(logn) prostorna O(n),5
+5,4,"pristup n-tom elementu je laksi za niz, posto se elementi u nizu dodaju uz numeraciju, dok se kod listi pokazuje sa liste na listu bez znanja reda, sto bi znacilo da bi nam trebala petlja sa brojacem n dok ne dodjemo do n tog elemta liste",5
+5,5,O(nlogn),0
+5,6,3,0
+5,7,"qsort(niz, n, char, opadajuci)
+	opadajuci(char *a, char *b){
+		char *n=a;
+		char *m=b;
+		return strcat(n,m);
+	}",0
+5,8,"kada ima previse ponavljanja dolazi do greske, prevelika vremenska slozenost,",2
+5,9,"void f(int x){​
+if (g(x))​
+a(x);​
+else {​
+b(x);​
+ x=p(x)
+ go to f(x);
+}​
+}",0
+5,10,,0
+5,11,"greska koja se pojavljuje kod pogresnog dinamickog alociranja memorije,",0
+5,12,"a.		 			8
+				4		12
+			    2       6        10    14
+			  1   3   5   7    9   11 13  15
+			  
+unos polivnom reda da pola bude levo pola desno
+			   
+b. od 1-15 ili od 15-1 redom, posto kod uredjenig b stabla elemnti se upisuju esno veci levo manji, gledajuci id korena ka dole te bismo ovko bili u mugucnosti da dodajemo samo desno tj levo",10
+6,1,~(((x & (1 << i)) >> i) ^ ((x & (1 << j)) >> j)),2
+6,2,b,5
+6,3,"vremenska O(nlogn)
+prostorna O(n)",0
+6,4,"Pristup ntom elementu je efikasniji pomocu nizova zato sto mozemo odmah da pozovemo niz[n],
+a za listu bismo morali da trazimo nti clan.
+
+Pristupacniji je za dinamicki niz",5
+6,5,O(logn),0
+6,6,"Ispisuje 6 tacaka 
+f(3), 3>0, 
+f(2), 2>0, 
+f(1), 1>0, 
+f(0), . ,f(0)
+f(1) 1>0, . , f(0)
+f(2) . f(1), 1>0, .
+. .",5
+6,7,"char *poredjenje(char *s1, char *s2)
+{
+	int n1 = strlen(s1);
+	int n2 = strlen(s2);
+	if(*(s1+n1-1) < *(s2+n2-1)) return s1;
+	else return s2;
+}",0
+6,8,"Mane rekurzije su to sto ima veliku vremensku slozenost i gomilaju se stekovi, ali je prednost u tome
+sto je kod razumljiviji i laksi za shvatanje",7
+6,9,"void f(int x)
+{
+	while(g(x) == 0)
+	{
+		b(x);
+		x = p(x);
+	}
+	a(x);
+}",10
+6,10,Najveci problme za selection sort predstavlja opadajuci niz,8
+6,11,"do fragmentacije memorije dolazi kada nije moguce rezervisati odredjeni prostor u memoriji, na primer
+kada nam funkcija malloc vrati NULL",0
+6,12,"a) stablo najmanje moguce dubine bi bilo kada bi koren bio 8 jer su tada levo i desno stablo jednake
+dubine pa bi dubina bila 
+
+b) stablo najvece moguce dubine bismo dobili kada bi koren bi na primer jedan ili 15 jer bi tada levo
+ili desno pod stablo bilo najvece moguce dubine",5
+7,1,!(((x&(1<<i))>>i)^((x&(1<<j))>>j)),10
+7,2,"b,c,d",9
+7,3,"vremenska: O(log(n))
+prostorna: O(log(n))",10
+7,4,"Efikasniji je za niz nego za povezanu listu, jer za niz mozemo direktno da pristupimo vrednosti na toj poziciji, a u listi je potrebno da idemo redom od glave, jedan po jedan element dok ne stignemo do n-tog.
+Jednako je efikasno, jer u oba slucaja direktno pristupamo vrednosti na odredjenoj adresi.",10
+7,5,O(n),10
+7,6,7,10
+7,7,"int cmp(void* a, void* b) {
+    char* s1=*((char**)a);
+    char* s2=*((char**)b);
+    int i=0, j=0;
+    while(s1[i]!='\0')
+    	i++;
+    }
+    i--;
+    while(s2[j]!='\0')
+    	j++;
+    }
+    j--;
+    return s2[j]-s1[i];
+}",9
+7,8,"Zauzima se puno memorije na steku jer je potrebno odvojiti memoriju za svaki poziv funkcije, moze da se desi da se iste stvari nepotrebno racunaju vise puta ako se funkcija tokom rekurzije vise puta pozove sa istim parametrima.",10
+7,9,"void f(int x) {
+    while(true) {
+    	if(g(x)) {
+    	    a(x);
+    	    break;
+    	}
+    	else {
+    	    b(x);
+    	    x=p(x);
+    	}
+    }
+}",10
+7,10,"Niz gde je najmanji element na poslednjoj poziciji, a ostali su poredjani redom, jer ce onda u svakom koraku najmanji element u preostalom delu niza biti na kraju (kada se stavi na svoje mesto, swapuje se sa elementom koji je posle njega najmanji, pa taj element koji je najmanji od preostalih dolazi na zadnju poziciju).",8
+7,11,"To znaci da su u memoriji zauzete pozicije koje nisu uzastopne, pa iako ima slobodnog prostora, nema dovoljno uzastopnih slobodnih pozicija. Desava se ako se koristi dinamicka alokacija memorije.
+Primer (0 oznacava slobodne bajtove, 1 zauzete):
+001100010100101
+Iako ima 9 slobodnih bajtova, ako program zatrazi 4 susedna bajta nece ih dobiti.",10
+7,12,"a.
+8 4 12 2 6 10 14 1 3 5 7 9 11 13 15
+Dobija se stablo dubine 4.
+b.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+Dobija se stablo dubine ",10
+8,1,,0
+8,2,"Odgovor je b., c. i d.",9
+8,3,"Vremenska slozenost je O(logn), a prostorna O(1).",7
+8,4,"Pristup n-tom elementu je efikasniji za niz u odnosu na povezanu listu, zato sto je pristup n-tom elementu liste slozenosti O(n), znaci zahteva vise vremena. Pristup bi trebalo biti isti i za niz i za dinamicki niz, mozda bi bilo efikasnije kod obicnog niza jer je memorija rezervisana na uzasnopnim mestima u memoriji, dok kod dinamickih to ne mora biti slucaj.",9
+8,5,O(nlogn),0
+8,6,Odgovor: ...,0
+8,7,,0
+8,8,"Mane rekurzije:
+Cena poziva - pri svakom pozivu rekurzije stvara se stek okvir, sto moze biti veoma vremenski i prostorno zahtevno
+Visestruka izracunavanja - kada delimo probleme na manje potrprobleme moze se desiti da se ti potproblemi preklapaju, tj. ponavljaju vise puta",10
+8,9,,0
+8,10,"Selection sort je vremenske slozenosti O(n^2), a prostorne O(1). Veoma dugacki nizovi su najgori slucaj za taj algoritam.",2
+8,11,"Tokom rada programa moze se desiti da se iz nepoznatih razloga oteza rad programa i smanji njegova efikasnost. Tada je moguce da se desi fragmentisanje memorije. Ako 0 oznacava slobodan bajt, a 1 zauzet, ako ih nema dovoljno na uzastopnim mestima ne mozemo da popunimo slobodne bajtove i tako dolazi do fragmentisanja memorije.",2
+8,12,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+a. posto je u pitanju uredjeno binarno stablo, svaki roditelj moze da ima najvise 2 deteta. znaci treba da budu u poretku tako da svaki roditelj ima po dva deteta.
+b. stablo najgore moguce dubine, je kada je strogi poredak, odnosni kada je strogo opadajuce ili strogo rastuce. kod strogo rastuceg poretka dobijamo degenerisano stablo koje ce imati oblik liste.",8
+9,1,(((x&(1<<i))>>i)&((x&(1<<j))>>j)==1 || (x&(1<<i))>>i)||((x&(1<<j))>>j))==0,2
+9,2,c,3
+9,3,"vremenska O(1), prostorna O(n).",0
+9,4,"Efikasnijji je za niz nego za listu. Jednostavno trazimo, na primer,  niz[5], dok kod liste moramo krenuti od glave pa traziti peti element.
+Ovo drugo je sve jedno.",10
+9,5,O(n),10
+9,6,6,0
+9,7,,0
+9,8,Manje citljiv kod,0
+9,9,"void f(int x){
+while(!g(x)){
+p(b(a(x));
+}
+}",0
+9,10,"niz koji je sortiran, ali u opadajucem poretku",5
+9,11,,0
+9,12,"najmanje dubine: 7, 3, 1, 2, 4, 5, 11, 13, 12, 14, 15, 9, 8, 10
+najvece dubine: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15",2
+10,1,(((x & (1<<i)) >> i) ^ ((x & (1<<j)) >> j)) ^ 1,10
+10,2,"Ispravni odgovori su b, c, d.",9
+10,3,I vremenska i prostorna slozenost funkcije f su O(logn).,10
+10,4,"Pristup n-tom elementu je efikasniji za niz nego za listu. Kod niza elementi se u memoriji nalaze jedna do drugog, pa moze da im se pristupa u O(1). Kod liste elementi su ""razbacani"" po memoriji, pa moraju da se obidju svi elementi od prvog do n-tog, sto znaci da je vremenska slozenost O(n).
+    Kako i dinamicki niz cuva elemente jedan do drugog, efikasnost pristupa n-tom elementu je ista kao i za niz, O(1).",10
+10,5,Slozenost je O(n).,10
+10,6,Ispisuje se 7 tackica.,10
+10,7,"int poredi(const void* a, const void* b)
+	{
+		char* s1 = *(char **)a;
+		char* s2 = *(char **)b;
+		int n1 = strlen(s1), n2 = strlen(s2);
+		return (s2[n2-1] - s1[n1-1]);
+	}",10
+10,8,"Ako se izvrsi veliki broj rekurzivnih poziva, moze da se prepuni memorija stek segmenta, sto dovodi do greske. Programi koji koriste rekurziju mogu da budu znacajno sporiji od programa koji istu stvar rade npr. while petljom (npr. slozenost izracunavanja n-tog Fibonacijevog broja u losoj rekurzivnoj implementaciji moze da bude eksponencijalna).",10
+10,9,"void f(int x)
+	{
+		while(!g(x))
+		{
+			b(x);
+			x = p(x);
+		}
+		a(x);
+	}",10
+10,10,"Pod pretpostavkom da se niz sortira rastuce tako sto se u svakom koraku najveci element (koji nije vec na mestu) postavlja na kraj, najgori slucaj je niz n, 1, 2, 3, ... , n-",9
+10,11,"Fragmentacija memorije je pojava da sistem, zbog lose raspodele, ne moze da alocira dovoljnu kolicinu memorije, iako postoji dovoljno slobodne memorije. Na primer, ako blok memorije izgleda ovako: 1010001001001001, on ima 10 slobodnih bitova (0-slobodan, 1-zauzet). Medjutim, sistem ne moze da alocira 4 bita, zato sto ne postoje 4 uzastopna slobodna bita. Sa druge strane, blok memorije 1111111111100000 ima samo 5 slobodnih bitova, ali sistem sada moze da alocira ",10
+10,12,"a) 8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15
+     b) 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15",10
+11,1,"​
+
+(((x>>i)&1)==((x>>j)&1)",10
+11,2,"​
+
+b i c",10
+11,3,"​
+
+vremenska sloz je o(logn) a prostorna je o(logn)",10
+11,4,"​
+
+a) efikasnije je za niz jer se nti clan direktno indeksira
+
+b) oba su prakticna",10
+11,5,"​ Složenost umetanja novog čvora na nasumičnu poziciju (rand()%n, gde je n dužina liste) u
+jednostruko povezanu listu je O(n).​",10
+11,6,"​
+
+funkcija ispisuje 8 tackica",3
+11,7,​,0
+11,8,"​ 
+Spora je i zahteva mnogo prostora",5
+11,9,"​
+
+void fiter(int x){
+while(!g(x)){
+	b(x);
+	x=p(x);
+	}
+	a(x);
+	}",10
+11,10,,0
+11,11,"stanje kada je slobodna memorija podeljenana male nepovezane delove izmedju kojih se nalazi ""popunjena"" memorija",7
+11,12,​,0
