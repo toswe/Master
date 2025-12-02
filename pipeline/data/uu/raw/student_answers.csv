@@ -1,0 +1,18 @@
+Student,Question,Score,Answer
+Student 1,1,8,"Pet osnovnih slojeva prema TCP/IP modelu su: Aplikativvni sloj, Transportni sloj,
+ Mrezni sloj, Vezivni sloj i jos jedan."
+Student 1,2,10,"Za veb stranice koristimo HTML, CSS i JavaScript. HTML koristimo za strukturu (tekst, slike tabele),
+CSS koristimo za izgled (font, boja,) a JavaScript koristimo za definisanje ponasanja, interaktivnost,
+on ozivljava sajt."
+Student 1,3,2,Osnovni tipovi podataka definisani u prog. jeziku JS su funkcije i metode.
+Student 1,4,10,".getElementById ('x') koristimo kada se neka naredba odnosi na nesto sa oznakom/tagom id='x'.
+a kada dodamo na to .style.color = 'green', znaci da se deo dokumenta sa oznakom 'x' boji u zeleno."
+Student 1,5,10,"HTML <canvas> je prostor u kome se izvrsava iscrtavanje.
+Implementujemo ga u <body> </body> deo dokumenta. 
+Pocinje sa oznakom <canvas> i zavrsva se oznakom </canvas>, u okviru ove dve oznake mozemo uneti 
+infromacije poput id=(''), visine i sirine platna (height = 500px, width= 500px)."
+Student 2,1,0,--
+Student 2,2,10,"Za izradu stranica se koriste HTML, CSS i JavaScript. HTML je zasluzan za stukturisanje sadrzaja, CSS za stilizovanje izgleda, a JavaScript za interaktivne delove tj ponasanje."
+Student 2,3,4,"Logicki, numericki, funkcije, promenljive, klase, varijable. U JavaScript-u elementi mogu menjati tip."
+Student 2,4,10,Naredba document.getElementById(”x”).style.color = ”green”; selektuje elemente sa ID-jem x i boji ih u zelenu boju
+Student 2,5,8,Canvas ili platno je JavaScrit element u okviru koga su omogucene interakcije i animacije na web stranicama. U HTML kod se ukljucuje u body delu ovako <canvas></canvas>.
