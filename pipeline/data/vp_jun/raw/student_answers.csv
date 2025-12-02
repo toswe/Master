@@ -1,0 +1,17 @@
+Student,Question,Score,Answer
+Anđela Živković,1,10,"Мрежа равноправних рачунара (P2P) и клијент – сервер (сервер чува ресурсе, клијент шаље захтев како би могао да користи ресурсе)."
+Anđela Živković,2,10,"Постоји 5 основних слојева и то су: мрежни, везни, физички, транспортни и апликациони."
+Anđela Živković,3,7,"Језик за навођење садржаја веб странице је HTML, за веб изглед је задужен CSS, а за њено понашање PHP."
+Anđela Živković,4,9,То значи да променљива може да мења тип података својим животним веком.
+Anđela Živković,5,8,"Обједињен модел документа је интерфејс који омогућава да динамички приступамо и изменимо садржај, структуру и стил веб документа; елементи документа се представљају објектима који имају своја својства и методе."
+Anđela Živković,6,10,"Елементу који има id = ""x1"" ће боја текста бити црвена."
+Anđela Živković,7,10,Издваја све колоне из табеле Predmet предметима чији назив почиње са Uvod и који имају више од 6 ESPB.
+Anđela Živković,8,9,"Foreach служи да пролази кроз све елементе у колекцији (нпр. низу, листи) без потребе за коришћењем индекса. Она аутоматски узима све елементе колекције редом, користи се обично када се пролази кроз податке у низу и чини код читљивијим."
+Andrija Obradović,1,8,"Raspodeljena organizacija računara i klijent–server. Klijenti šalju zahtjeve serveru, a server im usluge daje na raspolaganje."
+Andrija Obradović,2,4,"Apstrakcioni, transportni, mrežni, bežični i fizički sloj."
+Andrija Obradović,3,10,"HTML – za sadržaj, CSS – za izgled, JavaScript – za ponašanje."
+Andrija Obradović,4,10,Da se pri izvršavanju može menjati kojoj vrsti pripada.
+Andrija Obradović,5,10,DOM interfejs koji omogućava skriptovima da dinamički menjaju sadržaj i izgled veb stranice. Slika HTML strane sastavljene iz DOM objekata.
+Andrija Obradović,6,10,Elementu sa ID-em x se menja boja na crvenu.
+Andrija Obradović,7,10,Generiše sve iz tabele Predmet čiji naziv počinje sa 'Uvod' i espb poeni su veći od 6.
+Andrija Obradović,8,8,"foreach ($array as $key => $value) echo ključ $key, vrednost $value."

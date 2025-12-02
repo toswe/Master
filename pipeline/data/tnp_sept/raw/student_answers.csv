@@ -1,0 +1,25 @@
+Student,Question,Score,Answer
+Mihajlo Nikolić,1,9,"Priprema – izbor teme, proučavanje literature; Istraživanje – pronalaženje podataka za temu; Organizovanje i pisanje; Revizija – uklanjanje tehničkih i stilskih nedostataka."
+Mihajlo Nikolić,2,10,"\begin{document}
+ \end{document}"
+Mihajlo Nikolić,3,10,"Pripada procesivnom pristupu jer mi zadajemo u komandi šta želimo, a ne kako će to izgledati. "
+Mihajlo Nikolić,4,10,$ a = \sqrt{b+c} + \sqrt{b+c} $
+Mihajlo Nikolić,5,10,\includegraphics{slika.jpg}
+Anđelina Vujanović,1,10,"Priprema, istraživanje, organizovanje, pisanje i revizija."
+Anđelina Vujanović,2,10,"\begin{document}
+ \end{document}"
+Anđelina Vujanović,3,10,"Priprema pripada procesivnom pristupu jer korisnik ne određuje izgled teksta, već opisuje sadržaj. TEX sam generiše konačni izgled stranice i raspored elemenata."
+Anđelina Vujanović,4,10,$ a = \sqrt{b+c} + \sqrt{b+c} $
+Anđelina Vujanović,5,10,\includegraphics{slika.jpg}
+Marko Zrmanjatović,1,9,"Određivanje teme, priprema, istraživanje, organizovanje, pisanje, revizija."
+Marko Zrmanjatović,2,10,"\begin{document}
+ \end{document}"
+Marko Zrmanjatović,3,10,"TEX pripada procesivnom pristupu jer korisnik opisuje sadržaj, a program sam određuje izgled."
+Marko Zrmanjatović,4,10,$ a = \sqrt{b+c} + \sqrt{b+c} $
+Marko Zrmanjatović,5,10,\includegraphics{slika.jpg}
+Mateja Ostojić,1,8,"Priprema (kojoj ciljanoj publici…), istraživanje (pouzdani izvori), pisanje, revizija (ispravljanje grešaka)."
+Mateja Ostojić,2,10,"\begin{document}
+ \end{document}"
+Mateja Ostojić,3,10,"TEX pripada procesivnom pristupu jer opisuje tekst i komande, a rezultat se dobija nakon obrade."
+Mateja Ostojić,4,10,$ a = \sqrt{b+c} + \sqrt{b+c} $
+Mateja Ostojić,5,9,\includegraphics{slika.png}

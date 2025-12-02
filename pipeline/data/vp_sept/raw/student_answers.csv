@@ -1,0 +1,31 @@
+Student,Question,Score,Answer
+Matija Obradović 260/2020,1,9,"Računarska mreža je skup hardvera koji je povezan (računari, modemi, ruteri…) vezivnim elementima (optička vlakna, kablovi), koji uključuju kablovsku i bežičnu provodnu mrežu, softver."
+Matija Obradović 260/2020,2,10,"Peer-to-Peer – svi računari međusobno povezani i jednaki Klijent–Server – klijent traži podatke, server sadrži podatke i prosleđuje ih"
+Matija Obradović 260/2020,3,9,Topologija mreže je raspored računara jedne mreže. Postoji logička i fizička topologija. Takođe postoje lokalne i posebne topologije. (crtež prstenaste)
+Matija Obradović 260/2020,4,8,Aplikativni Transportni Mrežni Internet Fizički
+Matija Obradović 260/2020,5,10,za sadržaj: HTML za izgled: CSS za ponašanje: JavaScript
+Matija Obradović 260/2020,6,0,charset = 'UTF-8'
+Matija Obradović 260/2020,7,8,"Blokovski (div, article, …)"
+Matija Obradović 260/2020,8,10,<dl><dt>Vežbe</dt><dd>Praktični rad na računarima</dd><dt>Predavanja</dt><dd>Izlaganje osnovnih teorijskih koncepata</dd></dl>
+Matija Obradović 260/2020,9,6,Na header se odnosi stil teksta u okviru selektora – postavlja se font Times New Roman serif.
+Matija Obradović 260/2020,10,9,Znači da promenljiva može da menja tip tokom svog životnog veka.
+Matija Obradović 260/2020,11,8,"boolean, number, object, function, undefined, string"
+Matija Obradović 260/2020,12,10,"Objektni model dokumenta je interfejs koji u sklopu skriptovanja može da menja izgled, sadržaj i strukturu HTML dokumenta."
+Matija Obradović 260/2020,13,10,Postavlja boju elementa sa atributom id='x' na crvenu.
+Matija Obradović 260/2020,14,9,SELECT * FROM Predmet WHERE Naziv LIKE 'Uvod%' AND Espb > 6; Izdvaja sve predmete koji sadrže reč 'Uvod' i imaju ESPB veći od 6.
+Matija Obradović 260/2020,15,10,"foreach ($niz as $element) { echo $element; } foreach ($map as $key => $value) { echo 'Ključ: $key, vrednost: $value'; }"
+Jovana Filipović 259/2020,1,10,Računarska mreža je sistem koji čine hardverski uređaji koji su povezani komunikacionim uređajima i snabdeveni su softverom preko koga se šalju poruke svim povezanim uređajima.
+Jovana Filipović 259/2020,2,10,"Peer-to-Peer Klijent–Server (server sadrži resurse, klijent im pristupa)"
+Jovana Filipović 259/2020,3,10,"Način na koji su povezani uređaji. Postoji topologija zvezde, prstena i magistrale."
+Jovana Filipović 259/2020,4,10,"Aplikativni, transportni, mrežni, vezni, fizički"
+Jovana Filipović 259/2020,5,10,HTML – sadržaj CSS – izgled JavaScript – ponašanje
+Jovana Filipović 259/2020,6,10,"author, keywords, description"
+Jovana Filipović 259/2020,7,10,"main, header, footer, aside, nav"
+Jovana Filipović 259/2020,8,10,<dl><dt>Vežbe</dt><dd>Praktični rad na računarima</dd><dt>Predavanja</dt><dd>Izlaganje osnovnih teorijskih koncepata</dd></dl>
+Jovana Filipović 259/2020,9,8,Svi linkovi koji imaju klasu 2 i nalaze se u header i footer selektoru imaće font Times New Roman serif.
+Jovana Filipović 259/2020,10,10,Da promenljiva može da menja tip tokom veka trajanja i da se pri deklaraciji ne navodi tip.
+Jovana Filipović 259/2020,11,10,"number, string, boolean, object, function, null, undefined"
+Jovana Filipović 259/2020,12,10,DOM je način posmatranja dokumenta tako da se manipuliše njegovim elementima (čvorovima). Ceo dokument je jedno stablo i svaki njegov deo čini čvor.
+Jovana Filipović 259/2020,13,10,Element čiji je id = 'x' dobija crvenu boju.
+Jovana Filipović 259/2020,14,10,Izdvaja sve predmete kojima naziv počinje sa 'Uvod' i koji nose više od 6 ESPB.
+Jovana Filipović 259/2020,15,10,"foreach ($rec as $element) { naredbe } foreach ($rec as $key => $value) { echo $key, $value; }"
